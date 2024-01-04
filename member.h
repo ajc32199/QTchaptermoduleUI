@@ -5,10 +5,10 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include "./subdirectory/csv-parser-master/csv.hpp"
+#include "/subdirectory/csv-parser-master/single_include/csv.hpp"
 
 using namespace std;
-using namespace
+using namespace csv;
 
 class Member
 {
@@ -16,10 +16,8 @@ private:
     std::string name;
     std::string grade;
     int age;
-
-    //status: 1 is active, 2 is inactive, 3 is alumni, 4 is demitted
-    int status;
-    bool dues;
+    std::string status;
+    double dues;
     double debt;
 
 public:

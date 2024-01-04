@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "member.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,7 +17,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_searchMemberBtn_clicked()
 {
-    QString labelText = ui->searchName->text();
-    ui->searchLabel->setText(labelText);
+    Member m1;
+    m1.test();
 }
 
