@@ -12,3 +12,11 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+
+void MainWindow::on_searchMemberBtn_clicked()
+{
+    QString labelText = ui->searchName->text();
+    ui->searchLabel->setText(labelText);
+}
+
