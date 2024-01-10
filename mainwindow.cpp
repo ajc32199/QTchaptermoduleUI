@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "member.h"
+#include "membermanager.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -14,10 +14,4 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::on_searchMemberBtn_clicked()
-{
-    Member m1;
-    m1.test();
-}
 

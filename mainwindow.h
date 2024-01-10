@@ -19,7 +19,6 @@ public:
 
 private slots:
 
-    void on_searchMemberBtn_clicked();
 
 private:
     Ui::MainWindow *ui;
